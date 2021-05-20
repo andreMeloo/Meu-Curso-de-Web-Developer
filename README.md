@@ -1,7 +1,7 @@
 # Meu Curso de Web Developer FullStack
 
 ## Nesse repositório apresento todos os assuntos estudados por mim e pequenos exercícios sobre diversos assuntos.
-## O curso envolveu as principais linguagens da parte web e seus frameworks sendo eles:
+#### O curso envolveu as principais linguagens da parte web e seus frameworks sendo eles:
 
 1. JavaScript
 2. HTML
