@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <link rel="stylesheet" href="http://files.cod3r.com.br/curso-web/tree.css">
+    <style>
+        button {
+            border: none;
+            background-color: transparent;
+        }
+    </style>
+    <h1>Projeto</h1>
+    <ul class="tree">
+        <li  class="pasta">
+            <button>backend</button>
+            <ul>
+                <li  class="pasta">
+                    <button>app</button>
+                    <ul>
+                        <li>produto.js</li>
+                        <li>usuario.js</li>
+                        <li>venda.js</li>
+                    </ul>
+                </li>
+                <li  class="pasta">
+                    <button>config</button>
+                    <ul>
+                        <li>banco.js</li>
+                        <li>rotas.js</li>
+                        <li>servidor.js</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li class="pasta">
+            <button>front-end</button>
+            <ul>
+                <li class="pasta">
+                    <button>public</button>
+                    <ul>
+                        <li>app.css</li>
+                        <li>app.js</li>
+                        <li>index.html</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <script type="text/javascript">
+        document.querySelectorAll('.pasta').forEach(link => {
+            const pastas = link.querySelector('ul')
+            link.querySelector('button').onclick = function(e) {
+                e.preventDefault()
+                pastas.style.display != 'none' ? pastas.style.display = 'none' : pastas.style.display = 'block'   
+            }
+        })
+    </script>
+</html>
